@@ -36,6 +36,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,7 +47,7 @@
             this.label1.Location = new System.Drawing.Point(29, 25);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(244, 21);
+            this.label1.Size = new System.Drawing.Size(297, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Километри за дестиинация";
             // 
@@ -54,10 +55,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Elephant", 12F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(29, 107);
+            this.label2.Location = new System.Drawing.Point(29, 121);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(177, 21);
+            this.label2.Size = new System.Drawing.Size(211, 26);
             this.label2.TabIndex = 1;
             this.label2.Text = "Превозно средство";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -69,7 +70,7 @@
             this.button1.Location = new System.Drawing.Point(33, 181);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(321, 29);
+            this.button1.Size = new System.Drawing.Size(320, 30);
             this.button1.TabIndex = 4;
             this.button1.Text = "Виж колко разход имаш";
             this.button1.UseVisualStyleBackColor = false;
@@ -97,27 +98,41 @@
             this.button2.TabIndex = 6;
             this.button2.Text = "Изчисти";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(33, 50);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.Size = new System.Drawing.Size(100, 25);
             this.textBox1.TabIndex = 7;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(33, 134);
+            this.textBox2.Location = new System.Drawing.Point(34, 150);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
+            this.textBox2.Size = new System.Drawing.Size(100, 25);
             this.textBox2.TabIndex = 8;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(34, 81);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(108, 22);
+            this.radioButton1.TabIndex = 9;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "През нощта";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 14F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(764, 223);
+            this.ClientSize = new System.Drawing.Size(764, 227);
+            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button2);
@@ -144,6 +159,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }
 

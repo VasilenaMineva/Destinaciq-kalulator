@@ -15,6 +15,9 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
+
+            string[] transport = { "taxi", "bus", "train" };
+
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -29,7 +32,25 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int h = int.Parse(textBox1.Text);
+            
+            double distanse  = double.Parse(textBox1.Text);
+            double taxi=
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
